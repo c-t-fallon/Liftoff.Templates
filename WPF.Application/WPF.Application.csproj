@@ -13,4 +13,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="10.0.*-*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Razor.Class.Library\Razor.Class.Library.csproj" />
+  </ItemGroup>
+
 </Project>
