@@ -2,7 +2,7 @@ using System.Configuration;
 using System.Data;
 using System.Windows;
 
-namespace WPF.Application
+namespace Company.App.Desktop
 {
     /// <summary>
     /// Interaction logic for App.xaml

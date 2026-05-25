@@ -11,7 +11,7 @@ using System.Windows.Shapes;
 using System.Net.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WPF.Application;
+namespace Company.App.Desktop;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml

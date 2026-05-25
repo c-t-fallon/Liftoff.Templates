@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <RootNamespace>WPF.Application</RootNamespace>
+    <RootNamespace>Company.App.Desktop</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Razor.Class.Library\Razor.Class.Library.csproj" />
+    <ProjectReference Include="..\Company.App.UI\Company.App.UI.csproj" />
   </ItemGroup>
 
 </Project>

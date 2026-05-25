@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Razor.Class.Library\Razor.Class.Library.csproj" />
+    <ProjectReference Include="..\Company.App.UI\Company.App.UI.csproj" />
   </ItemGroup>
 
 </Project>

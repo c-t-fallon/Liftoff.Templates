@@ -14,7 +14,7 @@
         if (firstRender)
         {
             _module = await JS.InvokeAsync<IJSObjectReference>(
-                "import", "./_content/Razor.Class.Library/js/theme.js");
+                "import", "./_content/Company.App.UI/js/theme.js");
             var theme = await _module.InvokeAsync<string>("initTheme");
             isDark = theme == "dark";
             StateHasChanged();
