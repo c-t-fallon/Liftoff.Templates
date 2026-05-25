@@ -1,0 +1,36 @@
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<button class="theme-toggle" @onclick="Toggle" title="Toggle theme" aria-label="Toggle light/dark theme">
+    @(isDark ? "☀" : "☾")
+</button>
+
+@code {
+    private IJSObjectReference? _module;
+    private bool isDark;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _module = await JS.InvokeAsync<IJSObjectReference>(
+                "import", "./_content/Razor.Class.Library/js/theme.js");
+            var theme = await _module.InvokeAsync<string>("initTheme");
+            isDark = theme == "dark";
+            StateHasChanged();
+        }
+    }
+
+    private async Task Toggle()
+    {
+        if (_module is null) return;
+        var theme = await _module.InvokeAsync<string>("toggleTheme");
+        isDark = theme == "dark";
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (_module is not null)
+            await _module.DisposeAsync();
+    }
+}
