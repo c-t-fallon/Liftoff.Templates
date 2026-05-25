@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/BlazorDesktop/">
-    <Project Path="Company.App.Desktop/Company.App.Desktop.csproj" />
-    <Project Path="Company.App.UI/Company.App.UI.csproj" />
     <Project Path="Company.App.Web/Company.App.Web.csproj" />
+    <Project Path="Company.App.UI/Company.App.UI.csproj" />
+    <Project Path="Company.App.Desktop/Company.App.Desktop.csproj" />
   </Folder>
 </Solution>

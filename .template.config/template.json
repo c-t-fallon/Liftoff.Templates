@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "IMEG",
+  "classifications": [ "Desktop", "Blazor", "WPF", "WebAssembly" ],
+  "identity": "Liftoff.Templates.BlazorDesktop",
+  "name": "Liftoff Blazor Desktop",
+  "shortName": "liftoff-blazor-desktop",
+  "description": "Blazor Desktop app with a WPF host and WASM web target sharing a Razor Class Library.",
+  "sourceName": "Company.App",
+  "defaultName": "MyApp",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "primaryOutputs": [
+    { "path": "Company.App.slnx" },
+    { "path": "Company.App.Desktop/Company.App.Desktop.csproj" },
+    { "path": "Company.App.Web/Company.App.Web.csproj" },
+    { "path": "Company.App.UI/Company.App.UI.csproj" }
+  ],
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "**/.vs/**",
+            "**/.git/**",
+            "**/.github/**",
+            ".template.config/**",
+            "LICENSE.txt",
+            "README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}
